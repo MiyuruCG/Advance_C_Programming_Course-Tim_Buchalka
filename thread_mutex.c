@@ -35,8 +35,8 @@ int main()
     }
     j = 0;
 
-    pthread_create(&t1, NULL, do_process, NULL);
-    pthread_create(&t2, NULL, do_process, NULL);
+    pthread_create(&t1, NULL, (void *)do_process, NULL);
+    pthread_create(&t2, NULL, (void *)do_process, NULL);
 
     pthread_join(t1, NULL);
     pthread_join(t2, NULL);
