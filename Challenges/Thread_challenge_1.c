@@ -39,7 +39,7 @@ int main()
         pthread_join(thread_id[i], NULL);
         pthread_exit(&thread_id[i]);
     }
-    counter = 0;
+    //counter = 0;
 
     // }
 
